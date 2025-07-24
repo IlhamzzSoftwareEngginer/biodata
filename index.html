@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biodata Ilham Rizqi R</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Biodata Saya</h1>
+      <img src="profil.JPG" alt="Foto Profil" class="profile-img" />
+      <h2>Nama: Ilham Rizqi Ramadhan</h2>
+      <h3>Alamat: Pundak RT 04/RW 07</h3>
+      <h4>Umur:16</h4>
+      <p class="tagline">Siswa | Designer</p>
+    </header>
+
+    <section id="about">
+      <h2>Tentang Saya:</h2>
+      <p>Saya adalah seorang siswa SMKN 2 Karanganyar jurusan RPL (Rekayasa Perangkat Lunak).</p>
+    </section>
+
+    <section id="skills">
+      <h2>Kemampuan:</h2>
+
+      <div class="skills">
+        <label>HTML</label>
+        <div class="progress-bar" data-percent="48%">
+          <div class="fill"></div>
+          <span class="percent-text">48%</span>
+        </div>
+      </div>
+
+      <div class="skills">
+        <label>CSS</label>
+        <div class="progress-bar" data-percent="45%">
+          <div class="fill"></div>
+           <span class="percent-text">45%</span>
+        </div>
+      </div>
+
+      <div class="skills">
+        <label>JavaScript</label>
+        <div class="progress-bar" data-percent="5%">
+          <div class="fill"></div>
+           <span class="percent-text">5%</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="hoby">
+      <h2>Hobi:</h2>
+      <ul>
+        <li>Bersepeda</li>
+        <li>Mendengarkan Musik</li>
+        <li>Bermain Game</li>
+        <li>Desain</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Pengalaman:</h2>
+      <ul>
+        <li>Menjuarai Turnamen Antar Desa</li>
+      </ul>
+    </section>
+
+    <section id="social-media">
+      <h2>YT Saya:</h2>
+      <a href="https://youtube.com/@hamzz_prezett?si=acCtwWRTJZYV1WwV" target="_blank">Hamzz_przt
+        <p><h1>Jangan Lupa Follow Yaaa!!!!</h1></p>
+      </a>
+    </section>
+
+  </div>
+  <script>
+    window.onload = () => {
+      const bars = document.querySelectorAll('.progress-bar');
+      bars.forEach(bar => {
+        const fill = bar.querySelector('.fill');
+        const percent = bar.getAttribute('data-percent');
+        if (fill && percent) {
+          fill.style.width = percent;
+        }
+      });
+    };
+  </script>
+</body>
+</html>
